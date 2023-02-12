@@ -1,0 +1,58 @@
+version: '3.0'
+
+networks:
+  sellwater-network:
+    name: sellwater-network
+    driver: bridge
+
+services:
+  eurekaserver:
+    build:
+      ./backend/eurekaserver
+    container_name: eurekaserver
+    ports:
+      - 8761:8761
+    networks:
+      - sellwater-network
+
+  apigateway:
+    build:
+      ./backend/apigateway
+    container_name: apigateway
+    environment:
+      - eureka.client.serviceUrl.defaultZone=http://eurekaserver:8761/eureka
+      - eureka.instance.hostname=192.168.31.47
+    ports:
+      - 8001:8001
+    networks:
+      - sellwater-network
+
+  authenservice:
+    build:
+      ./backend/authenservice
+    container_name: authenservice
+    environment:
+      - spring.datasource.url=jdbc:postgresql://192.168.31.47:5434/sw_user
+      - eureka.client.serviceUrl.defaultZone=http://eurekaserver:8761/eureka
+      - eureka.instance.hostname=192.168.31.47
+    ports:
+      - 8002:8002
+    networks:
+      - sellwater-network
+#    depends_on:
+#      - SW-database
+
+#  SW-database:
+#    image: 'postgres:9.6-alpine'
+#    restart: always
+#    container_name: SW-database
+#    volumes:
+#      - ./database/docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
+#    environment:
+#      - POSTGERS_USER=postgres
+#      - POSTGRES_PASSWORD=Vti@1234
+#      - POSTGERS_DB=root
+#    ports:
+#      - 5434:5432
+#    networks:
+#      - sellwater-network

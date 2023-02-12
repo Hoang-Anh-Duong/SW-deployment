@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  database:
+    image: 'postgres:9.6-alpine'
+    restart: always
+    container_name: SW-database
+    volumes:
+      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
+    environment:
+      - POSTGERS_USER=postgres
+      - POSTGRES_PASSWORD=SW@password
+      - POSTGERS_DB=root
+    ports:
+      - 5434:5432
+    networks:
+      - sellwater-network
+
+networks:
+  sellwater-network:
+    name: sellwater-network
+    driver: bridge
