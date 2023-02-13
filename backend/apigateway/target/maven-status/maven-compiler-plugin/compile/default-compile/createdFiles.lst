@@ -1,1 +1,2 @@
 com\sellingwater\apigateway\ApigatewayApplication.class
+com\sellingwater\apigateway\config\CorsConfig.class
