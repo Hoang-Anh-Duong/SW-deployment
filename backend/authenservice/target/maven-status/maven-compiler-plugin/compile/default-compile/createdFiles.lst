@@ -1,5 +1,6 @@
 com\sellingwater\authenservice\service\role\RoleService.class
 com\sellingwater\authenservice\model\request\user\SearchUserRequest.class
+com\sellingwater\authenservice\model\response\user\UserResponse.class
 com\sellingwater\authenservice\configs\security\WebSecurity.class
 com\sellingwater\authenservice\controller\auth\AuthController.class
 com\sellingwater\authenservice\repository\UserRepository.class
@@ -29,6 +30,7 @@ com\sellingwater\authenservice\service\auth\AuthService.class
 com\sellingwater\authenservice\model\request\user\EditUserRequest.class
 com\sellingwater\authenservice\repository\RoleRepository.class
 com\sellingwater\authenservice\model\request\auth\SignupRequest.class
+com\sellingwater\authenservice\model\response\user\SearchUserResponse.class
 com\sellingwater\authenservice\model\request\auth\LoginRequest.class
 com\sellingwater\authenservice\controller\user\UserController.class
 com\sellingwater\authenservice\model\response\auth\SignupResponse.class

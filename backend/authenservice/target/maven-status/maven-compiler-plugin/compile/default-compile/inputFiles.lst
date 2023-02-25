@@ -14,6 +14,7 @@ C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\model\request\user\AddUserRequest.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\model\request\user\ProfileRequest.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\controller\auth\AuthController.java
+C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\model\response\user\UserResponse.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\model\response\auth\SignupResponse.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\model\response\auth\LogoutResponse.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\configs\security\WebSecurity.java
@@ -28,6 +29,7 @@ C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\repository\RoleRepository.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\configs\security\JwtToUserConverter.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\entity\UserRole.java
+C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\model\response\user\SearchUserResponse.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\AuthenserviceApplication.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\controller\user\UserController.java
 C:\Users\24H\Desktop\SellingWater-AD-project\backend\authenservice\src\main\java\com\sellingwater\authenservice\model\request\user\EditUserRequest.java
